@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia da Semana</title>
+    <style>
+        body {
+            background-color: rgb(205, 224, 247);
+            font: normal 16pt serif;
+            text-align: justify;
+            color: rgb(101, 133, 165);
+        }
+        h1 {
+            color: rgb(101, 140, 155);
+            font-style: italic;
+            font-weight: bold;
+        }
+        input{
+            color: rgb(84, 110, 136);
+            background-color: rgb(163, 186, 209);
+            border: none;
+            border-radius: 8%;
+            cursor: pointer;
+            padding: 10px 10px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dia da Semana</h1>
+    <p>Em qual dia da semana você está?</p>
+    <input type="button" value="Descobrir" onclick="diaSemana()">
+    <div id="semana"></div>
+    <script>
+        var agora = new Date()
+        var diaSem = agora.getDay()
+        function diaSemana(){
+            var semana = window.document.getElementById('semana')
+            semana.innerText = `\n O dia da semana em que você está é:`
+            switch(diaSem){
+                case 0:
+                    semana.innerText += ' Domingo'
+                    break
+                case 1:
+                    semana.innerText += ' Segunda-feira'
+                    break
+                case 2:
+                    semana.innerText += ' Terça-feira'
+                    break
+                case 3: 
+                    semana.innerText += ' Quarta-feira'
+                    break
+                case 4: 
+                    semana.innerText += ' Quinta-feira'
+                    break
+                case 5: 
+                    semana.innerText += ' Sexta-feira'
+                    break
+                case 6:
+                    semana.innerText += ' Sábado'
+                    break
+                default:
+                    semana.innerText += ' [ERRO] Dia inválido!'
+                    break
+            }
+            semana.innerText += '\n Tenha um ótimo dia!'
+        }
+        
+    </script>
+</body>
+</html>

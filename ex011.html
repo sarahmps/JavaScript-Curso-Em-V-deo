@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País</title>
+</head>
+<body>
+    <h1>Em qual país você vive?</h1>
+    País: <input type="text" name="txtp" id="txtp" placeholder="Digite o seu país">
+    <input type="button" value="Confirmar" onclick="função()">
+    <div id='res'></div>
+    <script>
+        var pais = window.document.getElementById('txtp')
+        function função() {
+            var res = window.document.getElementById('res')
+            var qual = String(pais.value)
+            res.innerText = `Você vive no país ${qual}! `
+            if (qual==='Brasil'){
+                res.innerText += '\n Você é brasileiro!'
+            }else{
+                res.innerText += '\n Você é estrangeiro!'
+            }
+            res.innerText += '\n Esse é um país muito bonito!'
+        }
+    </script>
+</body>
+</html>

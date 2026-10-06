@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area {
+            font: normal 20pt arial;
+            background: rgb(250, 189, 210);
+            color: rgb(202, 80, 131);
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div Id = 'area' onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        interaja...
+    </div>
+
+    <script>
+        var a =window.document.getElementById('area') // para associar esse var a da div a todas as funções. Não é o ideal por um problema de memória... se não usado é necessário repetir essa linda de código.
+        //quando a var é colocada para fora ela é GLOBAL, serve para todas as 3 functions:
+        function clicar() {
+            a.innerText = 'Clicou!'
+            a.style.background = 'rgb(174, 210, 231)'
+        }
+        function entrar() {
+            a.innerText = 'Entrou!'
+        }
+        function sair() {
+            a.innerText = 'Saiu!'
+            a.style.background = 'rgb(250, 189, 210)'
+        }
+    </script>
+</body>
+</html>
