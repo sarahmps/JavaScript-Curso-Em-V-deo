@@ -26,7 +26,7 @@ Este repositório reúne exercícios e projetos desenvolvidos durante os estudos
    node nome_do_arquivo.js
 
 
-Observação: alguns exercícios dependem de uma página HTML para funcionar corretamente. Nesses casos, abra o arquivo .html correspondente no navegador.
+**Observação: alguns exercícios dependem de uma página HTML para funcionar corretamente. Nesses casos, abra o arquivo .html correspondente no navegador.**
 
 ---
 
