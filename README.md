@@ -9,9 +9,9 @@ Este repositório reúne exercícios e projetos desenvolvidos durante os estudos
 
 ## 💻 Tecnologias utilizadas
 
-JavaScript — lógica e funcionalidades dos exercícios.
-HTML5 — estrutura das páginas web.
-Visual Studio Code — ambiente de desenvolvimento.
+- JavaScript — lógica e funcionalidades dos exercícios.
+- HTML5 — estrutura das páginas web.
+- Visual Studio Code — ambiente de desenvolvimento.
 
 ---
 
