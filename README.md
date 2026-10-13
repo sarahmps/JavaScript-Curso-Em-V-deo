@@ -11,6 +11,7 @@ Este repositório reúne exercícios e projetos desenvolvidos durante os estudos
 
 - JavaScript — lógica e funcionalidades dos exercícios.
 - HTML5 — estrutura das páginas web.
+- CSS3 — estilização e aparência das páginas.
 - Visual Studio Code — ambiente de desenvolvimento.
 
 ---
