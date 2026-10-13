@@ -1,6 +1,5 @@
 # 📚 Projetos de JavaScript — Curso em Vídeo
 
----
 
 ## 📌 Sobre o projeto
 
